@@ -1,0 +1,10 @@
+project: timemory
+target: timemory
+image: ghcr.io/rnshah9/playground:timemory
+testsuite:
+  - file://zfgrep
+#t
+cmds:
+  - cmd: /repo/build/timem @@
+    env:
+      DISABLE_SMOKETEST: '1'
